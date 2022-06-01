@@ -137,6 +137,14 @@ main {
     margin-top: 30px;
 }
 
+#artist img {
+    border-radius: 50%;
+}
+
+#artist .card {
+    margin-top: 30px;
+}
+
 /* footer */
 
 footer {
