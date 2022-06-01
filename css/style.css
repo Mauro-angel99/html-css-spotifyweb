@@ -2,6 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+/* utily */
+
+.margin-60 {
+    margin-bottom: 60px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+/* general */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* header */
@@ -17,12 +42,12 @@
 }
 
 #upgrade img {
-    height: 70px;
+    height: 60px;
     margin-left: 25px;
 }
 
 #upgrade .btn {
-    height: 50px;
+    height: 60px;
     width: 300px;
     border: 1px solid white;
     border-radius: 30px;
@@ -30,7 +55,7 @@
     color: white;
     font-weight: 600;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
     margin-right: 25px;
 }
 
@@ -43,21 +68,73 @@ main {
 }
 
 #sidebar {
-    min-width: 20vw;
-    background-color: blu;
+    width: 16vw;
+    height: 100%;
+    background-color: #000000;
+    padding: 120px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar li {
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#sidebar h4 {
+    margin: 20px 0 20px;
+}
+
+#sidebar .fa-plus {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
 }
 
 #contents {
-    width: 80vw;
-    padding: 30px;
+    width: 84vw;
+    padding: 130px 35px 0;
     overflow-y: scroll;
     background-color: #141922;
 }
 
-#sidebar {
-    width: 20vw;
-    height: 100%;
-    background-color: #000000;
+#contents ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contents h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#contents img {
+    width: 230px;
+    margin-bottom: 15px;
+}
+
+#contents h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#john-doe h2 {
+    margin-bottom: 30px;
+}
+
+#john-doe .card {
+    margin-top: 30px;
 }
 
 /* footer */
@@ -66,4 +143,5 @@ footer {
     height: 10vh;
     width: 100%;
     background-color: #282828;
+    position: fixed;
 }
