@@ -32,7 +32,7 @@
 /* general */
 
 main {
-    max-height: calc(100vh - 120px);
+    max-height: calc(100vh - 110px);
     display: flex;
 }
 
@@ -44,59 +44,33 @@ a {
     text-decoration: none;
 }
 
-/* header */
-
-#upgrade {
-    height: 100px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo-big {
-    height: 50px;
-    margin-left: 25px;
-}
-
-#logo-small {
-    display: none;
-    height: 40px;
-    margin-left: 25px;
-}
-
-#upgrade .btn {
-    height: 50px;
-    width: 280px;
-    border: 1px solid white;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    line-height: 50px;
-    margin-right: 25px;
-}
 
 /* sidebar */
 
 #sidebar {
-    width: 18%;
+    width: 220px;
     background-color: #000000;
-    padding: 120px 30px 0 30px;
+    padding: 25px 30px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
+#sidebar #logo-big {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#sidebar #logo-small {
+    display: none;
+    height: 30px;
+    margin: 0 auto 20px;
+}
 
 #sidebar li {
     text-decoration: none;
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #sidebar h4 {
@@ -111,14 +85,42 @@ a {
 }
 
 #sidebar img {
-    height: 30px;
+    height: 25px;
+}
+
+/* header */
+
+#upgrade {
+    height: 100px;
+    width: calc(100% - 220px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#upgrade .btn {
+    height: 40px;
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 25px;
 }
 
 /* contents */
 
 #contents {
-    width: 82%;
-    padding: 130px 0 0 30px;
+    width: calc(100% - 220px);
+    padding: 130px 0 0 20px;
     overflow-y: scroll;
     background-color: #141922;
 }
@@ -127,13 +129,13 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #contents li {
-    margin: 15px;
+    margin: 10px;
 }
 
 #contents h2 {
@@ -147,16 +149,16 @@ a {
 }
 
 .card {
-    width: 180px;
+    width: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 15px;
     margin-bottom: 20px;
 }
 
 #contents img {
-    width: 180px;
+    width: 170px;
     margin-bottom: 15px;
 }
 
@@ -197,11 +199,11 @@ a {
 /* footer */
 
 footer {
-    height: 120px;
+    height: 110px;
     width: 100%;
     background-color: #282828;
     position: fixed;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 /* song */
@@ -210,21 +212,21 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15%;
+    width: 20%;
+
 }
 
 .song img {
-    height: 60px;
+    height: 50px;
     margin-right: 10px;
+}
+
+.song .icon {
+    margin-left: 10px;
 }
 
 .fa-folder {
     margin-left: 10px;
-    font-size: 18px;
-}
-
-.fa-heart {
-    font-size: 18px;
 }
 
 .song h3 {
@@ -238,7 +240,7 @@ footer {
 /* play */
 
 .play {
-    width: 45%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +256,7 @@ footer {
 
 .commands {
     height: 70%;
-    width: 300px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,7 +264,7 @@ footer {
 
 .time {
     height: 50%;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,7 +272,7 @@ footer {
 
 .time-bar {
     height: 5px;
-    width: 80%;
+    width: 95%;
     background-color: #A3A3A3;
     margin: 0 20px;
 }
@@ -282,7 +284,7 @@ footer {
 /* volume */
 
 .volume {
-    width: 15%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,22 +1,7 @@
 @media screen and (max-width: 992px) {
-    #sidebar {
-        min-width: 200px;
-    }
 
     #contents ul {
         width: 70%;
-    }
-
-    .card {
-        width: 160px;
-    }
-
-    #contents img {
-        width: 160px;
-    }
-
-    .song {
-        min-width: 180px;
     }
 
     .song-icon {
@@ -27,30 +12,17 @@
         margin: 0;
     }
 
-    .song {
-        min-width: 180px;
+    .song .icon {
+        display: flex;
     }
 
-    .time {
-        min-width: 100%;
+    .fa-folder {
+        margin-left: 6px;
     }
-
-    .volume {
-        min-width: 180px;
-    }
-
 }
 
 
 @media screen and (max-width: 768px) {
-
-    #sidebar {
-        min-width: 250px;
-    }
-
-    #contents ul {
-        width: 85%;
-    }
 
     .card {
         width: 200px;
@@ -60,8 +32,8 @@
         width: 200px;
     }
 
-    .song {
-        min-width: 150px;
+    #contents ul {
+        width: 90%;
     }
 
     .song h3 {
@@ -77,16 +49,26 @@
         margin-right: 15px;
     }
 
-    .commands {
-        width: 200px;
+    .song .icon {
+        flex-direction: column;
+        font-size: 13px;
     }
 
-    .volume {
-        min-width: 150px;
+    .fa-folder {
+        margin: 10px 0 0;
+    }
+
+    .commands {
+        width: 150px;
+    }
+
+    .time span {
+        font-size: 11px;
     }
 
     .volume .icon {
         width: 45%;
+        font-size: 13px;
     }
 
     .volume-bar {
@@ -97,14 +79,10 @@
 @media screen and (max-width: 576px) {
 
     #sidebar {
-        min-width: 10%;
-        width: 30px;
-        padding: 120px 0 0;
+        width: 40px;
+        padding: 25px 0;
     }
 
-    #contents {
-        width: 90%;
-    }
 
     #sidebar li {
         display: flex;
@@ -115,11 +93,11 @@
         max-height: 30px;
     }
 
-    #logo-big {
+    #sidebar #logo-big {
         display: none;
     }
 
-    #logo-small {
+    #sidebar #logo-small {
         display: block;
     }
 
@@ -138,10 +116,19 @@
     #profile {
         display: flex;
         flex-direction: column;
+        align-self: center;
     }
 
     #profile hr {
         display: none;
+    }
+
+    #upgrade {
+        width: calc(100% - 40px);
+    }
+
+    #contents {
+        width: calc(100% - 40px);
     }
 
     .song {
@@ -157,25 +144,33 @@
         font-size: 9px;
     }
 
-    .song i {
-        font-size: 15px;
-    }
-
     .song img {
         height: 40px;
         margin-right: 10px;
     }
 
+    .song .icon {
+        font-size: 11px;
+    }
+
     .commands {
-        width: 130px;
+        width: 120px;
+    }
+
+    .play .fa-solid {
+        font-size: 18px;
+    }
+
+    .play .fa-regular {
+        font-size: 30px;
     }
 
     .volume {
         min-width: 120px;
     }
 
-    .volume i {
-        font-size: 15px;
+    .volume .icon {
+        font-size: 11px;
     }
 
 }
