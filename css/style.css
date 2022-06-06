@@ -31,12 +31,8 @@
 
 /* general */
 
-body {
-    height: 100vh;
-}
-
 main {
-    max-height: 87%;
+    max-height: calc(100vh - 120px);
     display: flex;
 }
 
@@ -201,7 +197,7 @@ a {
 /* footer */
 
 footer {
-    height: 13%;
+    height: 120px;
     width: 100%;
     background-color: #282828;
     position: fixed;
