@@ -1,0 +1,251 @@
+@media screen and (max-width: 992px) {
+    #sidebar {
+        min-width: 200px;
+    }
+
+    #contents ul {
+        width: 70%;
+    }
+
+    .card {
+        width: 160px;
+    }
+
+    #contents img {
+        width: 160px;
+    }
+
+    .song {
+        min-width: 180px;
+    }
+
+    .song-icon {
+        margin-left: 10px;
+    }
+
+    .fa-folder {
+        margin: 0;
+    }
+
+    .song {
+        min-width: 180px;
+    }
+
+    .time {
+        min-width: 100%;
+    }
+
+    .volume {
+        min-width: 180px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #sidebar {
+        min-width: 250px;
+    }
+
+    #contents ul {
+        width: 85%;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    #contents img {
+        width: 200px;
+    }
+
+    .song {
+        min-width: 150px;
+    }
+
+    .song h3 {
+        font-size: 14px;
+    }
+
+    .song span {
+        font-size: 10px;
+    }
+
+    .song img {
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .commands {
+        width: 200px;
+    }
+
+    .volume {
+        min-width: 150px;
+    }
+
+    .volume .icon {
+        width: 45%;
+    }
+
+    .volume-bar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #sidebar {
+        min-width: 10%;
+        width: 30px;
+        padding: 120px 0 0;
+    }
+
+    #contents {
+        width: 90%;
+    }
+
+    #sidebar li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #siderbar img {
+        max-height: 30px;
+    }
+
+    #logo-big {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+    }
+
+    #sidebar span {
+        display: none;
+    }
+
+    #sidebar h4 {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile hr {
+        display: none;
+    }
+
+    .song {
+        min-width: 120px;
+
+    }
+
+    .song h3 {
+        font-size: 12px;
+    }
+
+    .song span {
+        font-size: 9px;
+    }
+
+    .song i {
+        font-size: 15px;
+    }
+
+    .song img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .commands {
+        width: 130px;
+    }
+
+    .volume {
+        min-width: 120px;
+    }
+
+    .volume i {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-height: 630px) {
+    main {
+        height: 85%;
+    }
+
+    footer {
+        height: 15%;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    main {
+        height: 80%;
+    }
+
+    footer {
+        height: 20%;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    main {
+        height: 75%;
+    }
+
+    footer {
+        height: 25%;
+    }
+}
+
+@media screen and (max-height: 280px) {
+    main {
+        height: 65%;
+    }
+
+    footer {
+        height: 35%;
+    }
+}
+
+@media screen and (max-height: 190px) {
+    main {
+        height: 50%;
+    }
+
+    footer {
+        height: 50%;
+    }
+}
+
+@media screen and (max-height: 130px) {
+    main {
+        height: 35%;
+    }
+
+    footer {
+        height: 65%;
+    }
+}
+
+@media screen and (max-height: 90px) {
+    main {
+        height: 0%;
+    }
+
+    footer {
+        height: 100%;
+    }
+}

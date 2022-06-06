@@ -19,7 +19,8 @@
     <!-- header -->
 
     <header id="upgrade">
-        <img src="img/logo.svg" alt="">
+        <img id="logo-big" src="img/logo.svg" alt="">
+        <img id="logo-small" src="img/logo-small.svg" alt="">
         <a class="btn" href="">EFFETTUA L'UPGRADRE</a>
     </header>
 
@@ -32,9 +33,9 @@
         <div id="sidebar">
             <div>
                 <ul>
-                    <li><a href=""><img src="img/home.svg" alt="">Home</a></li>
-                    <li><a href=""><img src="img/search.svg" alt="">Cerca</a></li>
-                    <li><a href=""><img src="img/libreria.svg" alt="">La tua libreria</a></li>
+                    <li><a href=""><img src="img/home.svg" alt=""><span>Home</span></a></li>
+                    <li><a href=""><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
+                    <li><a href=""><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
                 </ul>
                 <h4>PLAYLIST</h4>
                 <ul class="playlist">
@@ -48,9 +49,9 @@
                 </ul>
             </div>
             <div id="profile">
-                <a href=""><img src="img/download.svg" alt="">Installa app</a>
+                <a href=""><img src="img/download.svg" alt=""><span>Installa app</span></a>
                 <hr>
-                <span><img src="img/profile.svg" alt="">Jonh Doe</span>
+                <a href=""><img src="img/profile.svg" alt=""><span>Jonh Doe</span></a>
             </div>
 
         </div>
@@ -72,9 +73,9 @@
 
             <!-- Recently played -->
 
-            <div id="recently-played">
+            <div>
                 <h2>Recently played</h2>
-                <div class="d-flex margin-60">
+                <div class="recently-played margin-60">
                     <div class="card">
                         <img src="img/metal_lifting.jpg" alt="">
                         <h3>Heavy metal</h3>
@@ -142,6 +143,10 @@
                 </div>
             </div>
     </main>
+
+    <!-- footer -->
+
+
     <footer class="d-flex j-between">
         <div class="song">
             <div class="d-flex a-center">
@@ -151,7 +156,7 @@
                     <span>Brano Nome</span>
                 </div>
             </div>
-            <div>
+            <div class="song-icon">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
             </div>
@@ -171,7 +176,7 @@
             </div>
         </div>
         <div class="volume">
-            <div>
+            <div class="icon">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
