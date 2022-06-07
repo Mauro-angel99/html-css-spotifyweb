@@ -4,7 +4,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Montserrat', sans-serif;
-
+    overflow: hidden;
 }
 
 /* utily */
@@ -32,7 +32,7 @@
 /* general */
 
 main {
-    max-height: calc(100vh - 110px);
+    height: calc(100vh - 110px);
     display: flex;
 }
 
@@ -44,21 +44,17 @@ a {
     text-decoration: none;
 }
 
-
 /* sidebar */
 
 #sidebar {
     width: 220px;
     background-color: #000000;
-    padding: 25px 30px 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 25px 0 0;
 }
 
 #sidebar #logo-big {
     height: 40px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
 }
 
 #sidebar #logo-small {
@@ -67,9 +63,36 @@ a {
     margin: 0 auto 20px;
 }
 
+#sidebar .menu-playlist {
+    height: calc(100% - 80px);
+}
+
+#sidebar .menu a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#sidebar .menu li:first-child {
+    border-left: #ADFF2F 2px solid;
+}
+
+#sidebar .add-playlist {
+    margin: 0 0 10px 20px;
+}
+
+#sidebar .add-playlist a {
+    display: flex;
+    align-items: center;
+}
+
+#sidebar .playlist {
+    margin-left: 20px;
+}
+
 #sidebar li {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
@@ -85,7 +108,21 @@ a {
 }
 
 #sidebar img {
-    height: 25px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#profile {
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#profile a {
+    display: flex;
+    align-items: center;
 }
 
 /* header */
@@ -103,7 +140,7 @@ a {
 
 #upgrade .btn {
     height: 40px;
-    width: 280px;
+    width: 260px;
     border: 1px solid white;
     border-radius: 30px;
     text-decoration: none;
@@ -116,11 +153,20 @@ a {
     right: 25px;
 }
 
+.li-active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #ADFF2F;
+    margin: 2px auto;
+}
+
 /* contents */
 
 #contents {
     width: calc(100% - 220px);
-    padding: 130px 0 0 20px;
+    padding: 130px 20px 0;
     overflow-y: scroll;
     background-color: #141922;
 }
@@ -129,7 +175,7 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     font-size: 10px;
 }
@@ -149,20 +195,22 @@ a {
 }
 
 .card {
-    width: 170px;
+    width: calc(100% / 6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
 #contents img {
-    width: 170px;
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
 }
 
 #contents h3 {
+    width: 90%;
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center
@@ -170,6 +218,7 @@ a {
 
 #contents span {
     font-size: 13px;
+    text-align: center;
 }
 
 #john-doe h2 {
@@ -272,13 +321,14 @@ footer {
 
 .time-bar {
     height: 5px;
-    width: 95%;
+    width: 80%;
     background-color: #A3A3A3;
     margin: 0 20px;
 }
 
 .time span {
     font-size: 13px;
+    width: 30px;
 }
 
 /* volume */

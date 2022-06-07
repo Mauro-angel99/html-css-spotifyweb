@@ -1,5 +1,9 @@
 @media screen and (max-width: 992px) {
 
+    .card {
+        width: calc(100% / 4)
+    }
+
     #contents ul {
         width: 70%;
     }
@@ -19,21 +23,29 @@
     .fa-folder {
         margin-left: 6px;
     }
+
+    .song {
+        min-width: 180px;
+    }
+
+    .volume {
+        min-width: 180px;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
 
     .card {
-        width: 200px;
-    }
-
-    #contents img {
-        width: 200px;
+        width: calc(100% / 2)
     }
 
     #contents ul {
         width: 90%;
+    }
+
+    .song {
+        min-width: 150px;
     }
 
     .song h3 {
@@ -66,6 +78,10 @@
         font-size: 11px;
     }
 
+    .volume {
+        min-width: 150px;
+    }
+
     .volume .icon {
         width: 45%;
         font-size: 13px;
@@ -80,7 +96,6 @@
 
     #sidebar {
         width: 40px;
-        padding: 25px 0;
     }
 
 
@@ -89,8 +104,17 @@
         justify-content: center;
     }
 
-    #siderbar img {
-        max-height: 30px;
+    #sidebar .menu a {
+        padding: 0;
+    }
+
+    #sidebar img {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    #sidebar .menu li:first-child {
+        border: none
     }
 
     #sidebar #logo-big {
@@ -105,7 +129,7 @@
         display: none;
     }
 
-    #sidebar h4 {
+    #sidebar .add-playlist {
         display: none;
     }
 
@@ -116,7 +140,7 @@
     #profile {
         display: flex;
         flex-direction: column;
-        align-self: center;
+        padding: 0;
     }
 
     #profile hr {
@@ -151,6 +175,7 @@
 
     .song .icon {
         font-size: 11px;
+        width: 30px;
     }
 
     .commands {

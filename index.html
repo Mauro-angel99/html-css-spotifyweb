@@ -21,17 +21,21 @@
         <!-- sidebar -->
 
         <div id="sidebar">
-            <div>
-                <img id="logo-big" src="img/logo.svg" alt="">
-                <img id="logo-small" src="img/logo-small.svg" alt="">
-                <ul>
+            <div class="menu-playlist">
+                <div>
+                    <img id="logo-big" src="img/logo.svg" alt="">
+                    <img id="logo-small" src="img/logo-small.svg" alt="">
+                </div>
+                <ul class="menu">
                     <li><a href=""><img src="img/home.svg" alt=""><span>Home</span></a></li>
                     <li><a href=""><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
                     <li><a href=""><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
                 </ul>
-                <h4>PLAYLIST</h4>
+                <div class="add-playlist">
+                    <h4>PLAYLIST</h4>
+                    <a href=""><i class="fa-solid fa-plus"></i>Crea playlist</a>
+                </div>
                 <ul class="playlist">
-                    <li><a href=""><i class="fa-solid fa-plus"></i>Crea playlist</a></li>
                     <li><a href="">Nome playlist</a></li>
                     <li><a href="">Nome playlist</a></li>
                     <li><a href="">Nome playlist</a></li>
@@ -45,7 +49,6 @@
                 <hr>
                 <a href=""><img src="img/profile.svg" alt=""><span>Jonh Doe</span></a>
             </div>
-
         </div>
 
         <!-- contents / header -->
@@ -56,7 +59,7 @@
             </header>
             <div class="margin-60">
                 <ul>
-                    <li>IN EVIDENZA</li>
+                    <li class="li-active">IN EVIDENZA</li>
                     <li>PODCAST</li>
                     <li>CLASSIFICHE</li>
                     <li>GENERI E MOOD</li>
